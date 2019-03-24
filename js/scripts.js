@@ -230,7 +230,7 @@ function HeroSection() {
 		$('#hero-height').addClass('hidden');
 	}
 
-	$('.hero-subtitle, .overlay-hover .item-title, .overlay-hover .item-cat').each(function () {
+	$('.hero-title,.hero-subtitle, .overlay-hover .item-title, .overlay-hover .item-cat').each(function () {
 		var words = $(this).text().split(" ");
 		var total = words.length;
 		$(this).empty();

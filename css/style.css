@@ -1273,7 +1273,7 @@ header.open .menu-info {
 #hero, #hero-height, #hero-styles {
     height: 75vh;
 }
-.hero-title {
+.hero-title,.home-title {
     font-size: 48px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
@@ -1292,7 +1292,7 @@ header.open .menu-info {
 .light-content .hero-title {
     color: #fff;
 }
-.hero-title span {
+.hero-title span, .home-title span {
     display: inline-block;
     margin: 0 6px;
     line-height: 60px;
@@ -1301,18 +1301,18 @@ header.open .menu-info {
     padding-top: 60px;
     box-sizing: border-box;
 }
-.animate .hero-title span {
+.animate .hero-title span,.animate .home-title span {
     padding-top: 0;
     -webkit-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
     transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.8s;
 }
-.hero-subtitle {
+.hero-subtitle,.home-subtitle {
     font-size: 16px;
     color: #999;
     width: 100%;
     z-index: 10;
     margin-left: 3px;
-    line-height: 30px;
+    line-height: 32px;
     -webkit-transition: color 0.2s ease-in-out 0s !important;
     transition: color 0.2s ease-in-out 0s !important;
 }
@@ -1320,19 +1320,22 @@ header.open .menu-info {
     color: #fff;
     opacity: 0.5;
 }
-.hero-subtitle span {
+.hero-subtitle span,.home-subtitle span {
     display: inline-block;
     margin: 0 3px;
-    line-height: 30px;
-    height: 30px;
+    line-height: 32px;
+    height: 32px;
     overflow: hidden;
     padding-top: 30px;
     box-sizing: border-box;
 }
-.animate .hero-subtitle span {
+.animate .hero-subtitle span,.animate .home-subtitle span {
     padding-top: 0;
     -webkit-transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
     transition: padding 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) 0.6s;
+}
+.home-subtitle span{
+	vertical-align: middle;
 }
 #hero-image {
     background-size: cover;
@@ -1363,6 +1366,13 @@ header.open .menu-info {
 }
 #image-border-right {
     right: 0;
+}
+.home-subtitle .interface-icon{
+	margin: 0;
+	padding: 0;
+	width: 32px;
+	background-size: 100% 100%;
+	background:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAzMiI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjEwIiB5MT0iMzAiIHgyPSIxMCIgeTI9IjIiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZTVlNWU1Ii8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0idXJsKCNhKSIgZD0iTTIgMmgxNnYyOEgyeiIvPjxwYXRoIGQ9Ik0xOCAyOWMwIC41NS0uNDUgMS0xIDFIM2MtLjU1IDAtMS0uNDUtMS0xVjNjMC0uNTUuNDUtMSAxLTFoMS4xN2MuMjcgMCAuNTIuMS43MS4yOUw2IDMuNDFjLjM4LjM4Ljg4LjU5IDEuNDEuNTloNS4xN2MuNTMgMCAxLjA0LS4yMSAxLjQxLS41OWwxLjEyLTEuMTJjLjItLjE5LjQ1LS4yOS43Mi0uMjlIMTdjLjU1IDAgMSAuNDUgMSAxdjI2ek0xNyAwSDNDMS4zNSAwIDAgMS4zNSAwIDN2MjZjMCAxLjY1IDEuMzUgMyAzIDNoMTRjMS42NSAwIDMtMS4zNSAzLTNWM2MwLTEuNjUtMS4zNS0zLTMtM3ptLTUgMjZIOGMtLjU1IDAtMSAuNDUtMSAxcy40NSAxIDEgMWg0Yy41NSAwIDEtLjQ1IDEtMXMtLjQ1LTEtMS0xIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI2JjYmNiYyIvPjwvc3ZnPg==) center center no-repeat;
 }
 /*--------------------------------------------------
 	06. Main Content
@@ -1798,11 +1808,11 @@ nav {
     right: 40px;
     top: 32px;
 }
-.hero-title {
+.hero-title,.home-title {
     font-size: 36px;
     line-height: 30px;
 }
-.hero-title span {
+.hero-title span,.home-title span  {
     margin: 0 4px;
     line-height: 40px;
     height: 40px;
@@ -1937,11 +1947,11 @@ nav {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
-.hero-title {
+.hero-title,.home-title {
     font-size: 24px;
     line-height: 20px;
 }
-.hero-title span {
+.hero-title span,.home-title span {
     margin: 0 3px;
     line-height: 30px;
     height: 30px;
